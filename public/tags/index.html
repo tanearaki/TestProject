@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Tags - My New Hugo Site</title>
+  <base href="http://example.org/">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=0">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="">
+  <meta property="og:site_name" content=""/>
+  <meta property="og:title" content=""/>
+  <link rel="stylesheet" href="http://example.org/css/common.css">
+  <link rel="stylesheet" href="http://example.org/css/home.css">
+</head>
+<body id="home" class="home">
+  <div id="wrapper">
+    <header>
+      <div id="header" role="banner">
+        <div class="main_width">
+          <div id="head_logo"><p><a href="/"><img src="/media/images/common/head_logo.png" width="80" height="58" alt="My New Hugo Site"></a></p></div>
+          <div id="gnavi" role="navigation">
+            <ul>
+              <li><a href="#mission" title="ミッション">ミッション</a></li>
+              <li><a href="#policy" title="ポリシー">ポリシー</a></li>
+              <li><a href="#news" title="ニュースリリース">ニュースリリース</a></li>
+              <li><a href="#career" title="採用情報">採用情報</a></li>
+              <li><a href="#company" title="会社概要">会社概要</a></li>
+            </ul>
+          </div>
+          <div id="sp_menu_btn" class="sp_menu_trigger sp_menu_btn">
+            <div class="sp-btn-cont">
+              <span class="border01"></span>
+              <span class="border02"></span>
+              <span class="border03"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<main id="terms">
+    <div id="collections" class="grape">
+        <div class="container">
+	    <h1>Tags</h1>
+	    <ul id="groups">
+	        
+            </ul>
+	</div>
+    </div>
+</main>
+
+<footer>
+  <div id="footer" role="contentinfo">
+    <div class="ft_logo"><img src="/media/images/common/ft_logo.png" width="220" height="36" alt=""></div>
+    <div class="ft_copy"><p><span>Copyright(C)</span><span>Fintertech Securities Co.,Ltd.</span><span>All Rights Reserved.</span></p></div>
+  </div>
+</footer>
+<div id="sp_menu" role="navigation">
+  <ul>
+    <li><a href="#mission" title="ミッション" class="sp_menu_trigger">ミッション</a></li>
+    <li><a href="#policy" title="ポリシー" class="sp_menu_trigger">ポリシー</a></li>
+    <li><a href="#news" title="ニュースリリース" class="sp_menu_trigger">ニュースリリース</a></li>
+    <li><a href="#career" title="採用情報" class="sp_menu_trigger">採用情報</a></li>
+    <li><a href="#company" title="会社概要" class="sp_menu_trigger">会社概要</a></li>
+  </ul>
+</div>
+</div>
+<script src="/js/jquery.js"></script>
+<script src="/js/easing.js"></script>
+<script src="/js/common.js"></script>
+<script>
+  $(function(){
+    setTimeout(function(){
+      $(".head_parts").addClass('on');
+    },500);
+    setTimeout(function(){
+      $(".main_catchg").addClass('on');
+    },1000);
+    setTimeout(function(){
+      $(".main_bg").addClass('on');
+      $(".bottom_parts").addClass('on');
+    },1500);
+    $(window).on('load scroll',function(){
+      $('.mv').each(function(){
+        var elemPos = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > elemPos - windowHeight + 200){
+          $(this).addClass('scrollin');
+          
+          
+          
+        }
+      });
+    });
+  });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

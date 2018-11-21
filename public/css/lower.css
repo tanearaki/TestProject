@@ -1,0 +1,41 @@
+@charset "utf-8";
+/*                下層共通
+======================================================= */
+/*                bread
+======================================================= */
+#bread {
+  float: left;
+}
+@media only screen and (max-width: 768px) {
+  #bread {
+    display: none;
+  }
+}
+#bread ol {
+  overflow: hidden;
+}
+#bread ol li {
+  display: inline-block;
+  float: left;
+  font-family: FontAwesome, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Arial, sans-serif;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 78.6%;
+}
+#bread ol li:before {
+  content: "\f105";
+  margin: 0 1em;
+}
+#bread ol li:first-child:before {
+  content: "";
+  margin: 0;
+}
+
+/*                レイアウト
+======================================================= */
+/*                記事系
+======================================================= */
+/*                お問い合わせ
+======================================================= */
